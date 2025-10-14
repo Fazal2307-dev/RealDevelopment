@@ -1,12 +1,12 @@
 import React from 'react'
 
 const App = () => {
-  const btnClicked = ()=>{
-    console.log("Hey Fazal you clicked the btn")
-  }
+  
   return (
     <div>
-      <button onClick={btnClicked} className='bg-gray-400 p-2 m-3 rounded-full'>Click me</button>
+      <input  onChange={()=>{
+        console.log('user is typing........')
+      }}    type="text" placeholder='Enter Name' className='bg-gray-400 p-4 m-4 text-m' />
     </div>
   )
 }
