@@ -1,15 +1,14 @@
 import React from 'react'
 
 const App = () => {
-const formHandler = (e) =>{
-    e.preventDefault()
-      console.log("Form Submitted");      
-  }
+const formHandle = (e)=>{
+  e.preventDefault()
+console.log("form Handling");
+
+}
   return (
     <div>
-      <form  onSubmit={(e)=>{
-          formHandler(e)
-        }}>
+      <form onSubmit={(e)=>{formHandle(e)}}>
         <input type="text" placeholder='Enter Your Name' />
         <button>Submit</button>
       </form>
