@@ -28,7 +28,7 @@ const App = () => {
     setTask(copyTask)
   }
   return (
-     <div className='h-screen lg:flex bg-gray-600 text-white'>
+     <div className='h-screen lg:flex bg-black text-white'>
 
       <form onSubmit={(e) => {
         submitHandler(e)
