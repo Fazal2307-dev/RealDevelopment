@@ -12,9 +12,9 @@ const App = () => {
     name:'Fazal',
     age:24,
     city:"Barh"
-  }
-  localStorage.setItem("user",JSON.stringify(user));
-  const users = JSON.parse(localStorage.getItem(user));
+  };
+  localStorage.setItem('user',JSON.stringify(user));
+  const users = JSON.parse(localStorage.getItem('user'));
   console.log(users);
   
   
