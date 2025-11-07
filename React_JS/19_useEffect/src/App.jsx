@@ -8,15 +8,17 @@ const [a, setA] = useState(0)
 const [b, setB] = useState(0)
 
   function aChanging(){
-    console.log('A value is chnage ');
+    console.log('A value is change ');
   }
   function bChanging(){
-    console.log('B value is chnage ');
+    console.log('B value is change ');
   }
   useEffect(function(){
-    aChanging(),
-    bChanging()
+    aChanging()
   },[a])
+  useEffect(function(){
+    bChanging()
+  },[b])
   return (
     <div>
       <h3>value of {a}{}</h3>
